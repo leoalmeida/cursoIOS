@@ -13,6 +13,8 @@
 		C29529C81559CCD8009F3556 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C29529C61559CCD8009F3556 /* InfoPlist.strings */; };
 		C29529CA1559CCD8009F3556 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C29529C91559CCD8009F3556 /* main.m */; };
 		C29529CE1559CCD8009F3556 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C29529CD1559CCD8009F3556 /* AppDelegate.m */; };
+		C29529E11559D068009F3556 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C29529DF1559D068009F3556 /* ViewController.m */; };
+		C29529E21559D068009F3556 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C29529E01559D068009F3556 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,15 @@
 		C29529BD1559CCD8009F3556 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C29529BF1559CCD8009F3556 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C29529C11559CCD8009F3556 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C29529C51559CCD8009F3556 /* FirstContacts-Info.plist */ = {isa = PBXFileReference; path = "FirstContacts-Info.plist"; sourceTree = "<group>"; };
+		C29529C51559CCD8009F3556 /* FirstContacts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FirstContacts-Info.plist"; sourceTree = "<group>"; };
 		C29529C71559CCD8009F3556 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C29529C91559CCD8009F3556 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C29529CB1559CCD8009F3556 /* FirstContacts-Prefix.pch */ = {isa = PBXFileReference; path = "FirstContacts-Prefix.pch"; sourceTree = "<group>"; };
-		C29529CC1559CCD8009F3556 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		C29529CB1559CCD8009F3556 /* FirstContacts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirstContacts-Prefix.pch"; sourceTree = "<group>"; };
+		C29529CC1559CCD8009F3556 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C29529CD1559CCD8009F3556 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C29529DE1559D068009F3556 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		C29529DF1559D068009F3556 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
+		C29529E01559D068009F3556 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController.xib; path = ../ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,9 @@
 		C29529C31559CCD8009F3556 /* FirstContacts */ = {
 			isa = PBXGroup;
 			children = (
+				C29529DE1559D068009F3556 /* ViewController.h */,
+				C29529DF1559D068009F3556 /* ViewController.m */,
+				C29529E01559D068009F3556 /* ViewController.xib */,
 				C29529CC1559CCD8009F3556 /* AppDelegate.h */,
 				C29529CD1559CCD8009F3556 /* AppDelegate.m */,
 				C29529C41559CCD8009F3556 /* Supporting Files */,
@@ -141,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29529C81559CCD8009F3556 /* InfoPlist.strings in Resources */,
+				C29529E21559D068009F3556 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +162,7 @@
 			files = (
 				C29529CA1559CCD8009F3556 /* main.m in Sources */,
 				C29529CE1559CCD8009F3556 /* AppDelegate.m in Sources */,
+				C29529E11559D068009F3556 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +266,7 @@
 				C29529D31559CCD8009F3556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
