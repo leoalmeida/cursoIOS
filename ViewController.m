@@ -20,24 +20,7 @@
 -(void) viewDidLoad{
     [super viewDidLoad];
     self.title = @"Contatos";
-    self.contatos = [[NSMutableArray alloc] initWithObjects:
-                     @"Caelum RJ", 
-                     @"Caelum SP", 
-                     @"Caelum BSB",
-                     @"Caelum BSB",
-                     @"Caelum BSB",
-                     @"Caelum BSB",
-                     @"Caelum BSB",
-                     @"Caelum BSB",
-                     @"Caelum BSB",
-                     @"Caelum BSB",
-                     @"Caelum BSB",
-                     @"Caelum BSB",
-                     @"Caelum BSB",
-                     @"Caelum BSB",
-                     @"Caelum BSB",
-                     @"Caelum BSB", nil];
-    
+        
 }
 
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{

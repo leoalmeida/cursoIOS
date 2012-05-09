@@ -15,6 +15,7 @@
 		C29529CE1559CCD8009F3556 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C29529CD1559CCD8009F3556 /* AppDelegate.m */; };
 		C29529E11559D068009F3556 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C29529DF1559D068009F3556 /* ViewController.m */; };
 		C29529E21559D068009F3556 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C29529E01559D068009F3556 /* ViewController.xib */; };
+		C29529E51559EC6A009F3556 /* contatos.plist in Resources */ = {isa = PBXBuildFile; fileRef = C29529E31559EC6A009F3556 /* contatos.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		C29529DE1559D068009F3556 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
 		C29529DF1559D068009F3556 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		C29529E01559D068009F3556 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController.xib; path = ../ViewController.xib; sourceTree = "<group>"; };
+		C29529E41559EC6A009F3556 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/contatos.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		C29529C41559CCD8009F3556 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C29529E31559EC6A009F3556 /* contatos.plist */,
 				C29529C51559CCD8009F3556 /* FirstContacts-Info.plist */,
 				C29529C61559CCD8009F3556 /* InfoPlist.strings */,
 				C29529C91559CCD8009F3556 /* main.m */,
@@ -150,6 +153,7 @@
 			files = (
 				C29529C81559CCD8009F3556 /* InfoPlist.strings in Resources */,
 				C29529E21559D068009F3556 /* ViewController.xib in Resources */,
+				C29529E51559EC6A009F3556 /* contatos.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +179,14 @@
 				C29529C71559CCD8009F3556 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C29529E31559EC6A009F3556 /* contatos.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C29529E41559EC6A009F3556 /* en */,
+			);
+			name = contatos.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

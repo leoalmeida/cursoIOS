@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Contato1</key>
+	<dict>
+		<key>nome</key>
+		<string>Caelum SP</string>
+		<key>endereco</key>
+		<string>São Paulo, SP, Rua Vergueiro, 3185</string>
+		<key>telefone</key>
+		<string>01155712751</string>
+		<key>email</key>
+		<string>contato@caelum.com.br</string>
+		<key>site</key>
+		<string>http://www.caelum.com.br</string>
+		<key>imagem</key>
+		<data></data>
+	</dict>
+	<key>Contato2</key>
+	<dict>
+		<key>nome</key>
+		<string>Caelum RJ</string>
+		<key>endereco</key>
+		<string>Rio de Janeiro, RJ, Rua do Ouvidor, 50</string>
+		<key>telefone</key>
+		<string>021222204156</string>
+		<key>email</key>
+		<string>contato@caelum.com.br</string>
+		<key>site</key>
+		<string>http://www.caelum.com.br</string>
+		<key>imagem</key>
+		<data></data>
+	</dict>
+	<key>Contato3</key>
+	<dict>
+		<key>nome</key>
+		<string>Caelum BSB</string>
+		<key>endereco</key>
+		<string>Brasilia, SCS - Qd. 8 Bl. B-50, Sala 521 Ed. Venancio, 2000</string>
+		<key>telefone</key>
+		<string>06130394222</string>
+		<key>email</key>
+		<string>contato@caelum.com.br</string>
+		<key>site</key>
+		<string>http://www.caelum.com.br</string>
+		<key>imagem</key>
+		<data></data>
+	</dict>
+</dict>
+</plist>

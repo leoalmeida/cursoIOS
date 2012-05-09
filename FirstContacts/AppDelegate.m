@@ -9,6 +9,11 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 
+@interface AppDelegate() {
+    NSMutableArray *contatos;
+}
+@end
+
 @implementation AppDelegate
 
 @synthesize navigationController = _navigationController;
@@ -20,7 +25,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
+    [self carregaDoPlist];
+            
     ViewController *listagemContatos = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    listagemContatos.contatos = contatos;
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:listagemContatos];
     
     self.window.rootViewController = self.navigationController;
@@ -54,6 +62,19 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)carregaDoPlist{
+    NSString *caminho = [[NSBundle mainBundle] pathForResource:@"contatos" ofType:@"plist"];
+    NSMutableDictionary *arrayContatos = [[NSMutableDictionary alloc] initWithContentsOfFile:caminho];
+    contatos = [[NSMutableArray alloc] init];
+    
+    for(NSString *key in arrayContatos){
+        NSDictionary *d = [arrayContatos objectForKey:key];
+        
+        //array para armazenar os contatos
+        [contatos addObject:[d objectForKey:@"nome"]];
+    }
 }
 
 @end

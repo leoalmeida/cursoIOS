@@ -10,6 +10,6 @@
 
 @interface ViewController : UITableViewController
 
-@property(strong, nonatomic) NSMutableArray *contatos;
+@property(strong, nonatomic) NSMutableArray *contatos; 
 
 @end
