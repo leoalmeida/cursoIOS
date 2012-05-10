@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "Contato.h"
 
 @interface AppDelegate() {
     NSMutableArray *contatos;
@@ -21,6 +22,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    Contato *contato = [[Contato alloc]init];
+    [contato setNome:@"Caelum Unidade SP"];
+    [contato setEmail:@"contato@caelum.com.br"];
+    
+    //utilize os outros setters
+    
+    NSLog(@"Contato: %@ - %@", [contato nome],[contato email]);
+    
+    Contato *contatoB = [[Contato alloc]init];
+    contatoB.nome = @"Caelum BSB";
+    contatoB.email = @"contatobsb@caelum.com";
+    
+    NSLog(@"Contato: %@ - %@", contatoB.nome,contatoB.email);    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -72,8 +87,16 @@
     for(NSString *key in arrayContatos){
         NSDictionary *d = [arrayContatos objectForKey:key];
         
+        Contato *c = [[Contato alloc]init];
+        
+        [c setNome:[d objectForKey:@"nome"]];
+        [c setEmail:[d objectForKey:@"email"]];
+        [c setTelefone:[d objectForKey:@"telefone"]];
+        [c setEndereco:[d objectForKey:@"endereco"]];
+        [c setSite:[d objectForKey:@"site"]];
+        
         //array para armazenar os contatos
-        [contatos addObject:[d objectForKey:@"nome"]];
+        [contatos addObject:c];
     }
 }
 

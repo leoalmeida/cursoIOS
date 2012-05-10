@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ContatoProtocol.h"
 
-@interface ViewController : UITableViewController
+@interface ViewController : UITableViewController <ContatoProtocol>
 
 @property(strong, nonatomic) NSMutableArray *contatos; 
 
