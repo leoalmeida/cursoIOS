@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "ContatoProtocol.h"
+#import "MessageUI/MFMailComposeViewController.h"
 
-@interface ViewController : UITableViewController <ContatoProtocol>
+@interface ViewController : UITableViewController <ContatoProtocol, UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
 
 @property(strong, nonatomic) NSMutableArray *contatos; 
+@property(strong, nonatomic) Contato *contatoSelecionado;
+-(void) exibeMaisAcoes:(UIGestureRecognizer *)gesto;
 
 @end

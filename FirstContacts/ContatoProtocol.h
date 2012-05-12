@@ -11,6 +11,6 @@
 
 @protocol ContatoProtocol <NSObject>
 
-@required
 -(void) salvaContato:(Contato *) c;
+-(void) contatoAlteradoComSucesso;
 @end
