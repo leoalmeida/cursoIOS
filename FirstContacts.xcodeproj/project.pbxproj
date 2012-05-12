@@ -21,6 +21,7 @@
 		C29529E21559D068009F3556 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C29529E01559D068009F3556 /* ViewController.xib */; };
 		C29529E51559EC6A009F3556 /* contatos.plist in Resources */ = {isa = PBXBuildFile; fileRef = C29529E31559EC6A009F3556 /* contatos.plist */; };
 		C2D75BED155DCA9200BDC3D6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D75BEC155DCA9200BDC3D6 /* MessageUI.framework */; };
+		C2D75BF0155DE4FF00BDC3D6 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D75BEF155DE4FF00BDC3D6 /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		C29529E01559D068009F3556 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController.xib; path = ../ViewController.xib; sourceTree = "<group>"; };
 		C29529E41559EC6A009F3556 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/contatos.plist; sourceTree = "<group>"; };
 		C2D75BEC155DCA9200BDC3D6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		C2D75BEF155DE4FF00BDC3D6 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2D75BF0155DE4FF00BDC3D6 /* Twitter.framework in Frameworks */,
 				C2D75BED155DCA9200BDC3D6 /* MessageUI.framework in Frameworks */,
 				C29529BE1559CCD8009F3556 /* UIKit.framework in Frameworks */,
 				C29529C01559CCD8009F3556 /* Foundation.framework in Frameworks */,
@@ -96,6 +99,7 @@
 		C29529AE1559CCD8009F3556 = {
 			isa = PBXGroup;
 			children = (
+				C2D75BEF155DE4FF00BDC3D6 /* Twitter.framework */,
 				C2D75BEC155DCA9200BDC3D6 /* MessageUI.framework */,
 				C29529C31559CCD8009F3556 /* FirstContacts */,
 				C29529BC1559CCD8009F3556 /* Frameworks */,

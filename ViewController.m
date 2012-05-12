@@ -11,6 +11,7 @@
 #import "FormularioContatoControllerViewController.h"
 #import "EditarContatosController.h"
 #import <MessageUI/MFMailComposeViewController.h>
+#import <Twitter/TWTweetComposeViewController.h>
 
 @interface ViewController ()
 
@@ -112,7 +113,7 @@
         
         self.contatoSelecionado = contato;
         
-        UIActionSheet *opcoes = [[UIActionSheet alloc] initWithTitle:contato.nome delegate:self cancelButtonTitle:@"Cancelar" destructiveButtonTitle:nil otherButtonTitles:@"Ligar", @"Enviar Email", @"Visualizar site", @"Abrir Mapa", nil];
+        UIActionSheet *opcoes = [[UIActionSheet alloc] initWithTitle:contato.nome delegate:self cancelButtonTitle:@"Cancelar" destructiveButtonTitle:nil otherButtonTitles:@"Ligar", @"Enviar Email", @"Visualizar site", @"Abrir Mapa", @"Twitter", nil];
         [opcoes showInView:self.view];
         
     }
@@ -132,7 +133,10 @@
             break;            
         case 3:
             [self mostrarMapa];
-            break;            
+            break;
+        case 4:
+            [self twitar];
+            break;
         default:
             break;
     }
@@ -178,6 +182,15 @@
 -(void) mostrarMapa{
     NSString *url = [[NSString stringWithFormat:@"http://maps.google.com/maps?q=%@", self.contatoSelecionado.endereco] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     [self abrirAplicationComURL:url];
+}
+
+-(void) twitar{
+    TWTweetComposeViewController *controler =  [[TWTweetComposeViewController alloc]init];
+    [controler setCompletionHandler:^(TWTweetComposeViewControllerResult result){
+        NSLog(@"Tweetando");
+    }];
+    
+    [self presentModalViewController:controler animated:YES];
 }
 
 @end

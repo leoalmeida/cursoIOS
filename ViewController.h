@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ContatoProtocol.h"
 #import "MessageUI/MFMailComposeViewController.h"
+#import "Twitter/TWTweetComposeViewController.h"
 
 @interface ViewController : UITableViewController <ContatoProtocol, UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
 
